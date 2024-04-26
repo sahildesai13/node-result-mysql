@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="0">
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>password</th>
+        <th>roll no</th>
+        <th>standard</th>
+        <th>division</th>
+        <th>add result</th>
+
+        <% data.forEach((ele)=>{ %>
+            <tr>
+                <td>
+                    <%= ele.id %>
+                </td>
+                <td>
+                    <%= ele.name %>
+                </td>
+                <td>
+                    <%= ele.email %>
+                </td>
+                <td>
+                    <%= ele.password %>
+                </td>
+                <td>
+                    <%= ele.rollno %>
+                </td>
+                <td>
+                    <%= ele.ststd %>
+                </td>
+                <td>
+                    <%= ele.stdiv %>
+                </td>
+                <td><button onclick="location.href='/ResultAdd/<%=ele.id%>'">add result</button></td>
+            </tr>
+            <% })%>
+    </table>
+
+    <br>
+</body>
+
+</html>

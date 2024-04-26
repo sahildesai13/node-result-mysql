@@ -1,0 +1,26 @@
+<head>
+    <title>View Divison</title>
+</head>
+
+<body>
+    <h1>View Divison</h1>
+    <form method="post">
+        <select name="standard">
+            <option>select std</option>
+            <%data .forEach(ele=> { %>
+                <option value="<%= ele.std %>">std :<%= ele.std%>
+                </option>
+                <% });%>
+        </select>
+        <select name="division">
+            <option>select div</option>
+            <% data.forEach(ele=> { %>
+                <option value="<%= ele.div %>">div :<%= ele.div%>
+                </option>
+                <% });%>
+        </select>
+        <input type="submit" name="save">
+    </form>
+
+    <button onclick="location.href='/AdminDashboard'">back</button>
+</body>

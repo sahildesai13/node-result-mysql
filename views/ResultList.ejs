@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result List</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="0">
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>roll no</th>
+        <th>sub1</th>
+        <th>sub2</th>
+        <th>sub3</th>
+        <th>sub4</th>
+        <th>sub5</th>
+        <th>std</th>
+        <th>div</th>
+        <th>total</th>
+        <th>per</th>
+        <th>update</th>
+        <th>delete</th>
+
+        <% data.forEach((ele)=>{ %>
+            <tr>
+                <td>
+                    <%= ele.id %>
+                </td>
+                <td>
+                    <%= ele.name %>
+                </td>
+                <td>
+                    <%= ele.email %>
+                </td>
+                <td>
+                    <%= ele.rollno %>
+                </td>
+                <td>
+                    <%= ele.sub1 %>
+                </td>
+                <td>
+                    <%= ele.sub2 %>
+                </td>
+                <td>
+                    <%= ele.sub3 %>
+                </td>
+                <td>
+                    <%= ele.sub4 %>
+                </td>
+                <td>
+                    <%= ele.sub5 %>
+                </td>
+                <td>
+                    <%= ele.ststd %>
+                </td>
+                <td>
+                    <%= ele.stdiv %>
+                </td>
+                <td>
+                    <%= ele.total %>
+                </td>
+                <td>
+                    <%= ele.per %>
+                </td>
+                <td><button onclick="location.href='/ResultUpdate/<%=ele.id%>'">update</button></td>
+                <td><button onclick="location.href='/ResultDelete/<%=ele.id%>'">delete</button></td>
+            </tr>
+            <% })%>
+    </table>
+    <br>
+    <button onclick="location.href='/AdminDashboard'">back</button>
+</body>
+
+</html>

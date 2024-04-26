@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff View</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="0">
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>password</th>
+        <th>standard</th>
+        <th>division</th>
+        <% data.forEach((ele)=>{ %>
+            <tr>
+                <td>
+                    <%= ele.id %>
+                </td>
+                <td>
+                    <%= ele.name %>
+                </td>
+                <td>
+                    <%= ele.email %>
+                </td>
+                <td>
+                    <%= ele.password %>
+                </td>
+                <td>
+                    <%= ele.sstd %>
+                </td>
+                <td>
+                    <%= ele.sdiv %>
+                </td>
+            </tr>
+            <% })%>
+                <button onclick="location.href='/AdminDashboard'">back</button>
+    </table>
+</body>
+
+</html>

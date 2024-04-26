@@ -1,0 +1,22 @@
+<table border="">
+    <th>id</th>
+    <th>name</th>
+    <th>email</th>
+    <th>password</th>
+    <th>standard</th>
+    <th>division</th>
+
+<% data.forEach((ele)=>{ %>
+    <tr>
+        <td><%= ele.id %></td>
+        <td><%= ele.name %></td>
+        <td><%= ele.email %></td>
+        <td><%= ele.password %></td>
+        <td><%= ele.ststd %></td>
+        <td><%= ele.stdiv %></td>
+    </tr>
+<% })%>
+</table> 
+<br>
+<br>
+<button onClick="location.href='/AdminDashboard'">AdminDashboard</button>

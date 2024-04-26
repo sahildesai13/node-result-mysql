@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricipal Dashboard</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        button {
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 50px;
+            border: 0;
+            box-shadow: 0px 0px 7px rgb(39, 39, 39);
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Principal Dashboard</h1>
+    <div class="box">
+        <button onclick="location.href='/adddivstd'">Add Division & Standard</button>
+        <button onclick="location.href='/AddStudent'">Add Student</button>
+        <button onclick="location.href='/StudentView'">Student List</button>
+        <button onclick="location.href='/ViewStdDivison'">View Student With Filter</button>
+        <button onclick="location.href='/AddStaff'">Add Employee</button>
+        <button onclick="location.href='/StaffView'">Employee List</button>
+        <button onclick="location.href='/staffControl'">Employee Control</button>
+        <button onclick="location.href='/logout'">logout</button>
+    </div>
+</body>
+
+</html>

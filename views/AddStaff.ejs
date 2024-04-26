@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add staff</title>
+</head>
+<body>
+    <form method="post" >
+        <input type="text" name="name" placeholder="enter name"><br><br>
+        <input type="email" name="email" placeholder="enter email"><br><br>
+        <input type="password" name="password" placeholder="enter password"><br><br>
+        <select name="standard">
+            <option value="">Select div</option>
+            <% data.forEach(ele => { %>
+                <option value="<%= ele.std %>">std:  :<%= ele.std%></option>    
+            <% }); %>
+        </select>
+
+        <select name="division">
+            <option value="">Select div</option>
+            <% data.forEach(ele => { %>
+                <option value="<%= ele.div %>">div:  :<%= ele.div%></option>    
+            <% }); %>
+        </select>
+        
+        <input type="submit" name="save">
+    </form>
+</body>
+</html>

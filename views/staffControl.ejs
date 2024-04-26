@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Control</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" >
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>password</th>
+        <th>standard</th>
+        <th>division</th>
+        <th>update</th>
+        <th>delete</th>
+   
+    <% data.forEach((ele)=>{ %>
+        <tr>
+            <td><%= ele.id %></td>
+            <td><%= ele.name %></td>
+            <td><%= ele.email %></td>
+            <td><%= ele.password %></td>
+            <td><%= ele.sstd %></td>
+            <td><%= ele.sdiv %></td>
+            <td><button onclick="location.href='/StaffUpdate/<%= ele.id %>'">update</button></td>
+            <td><button onclick="location.href='/DeleteStaff/<%= ele.id %>'">delete</button></td>
+        </tr>
+    <% })%>
+    <button onclick="location.href='/AdminDashboard'">back</button>
+</table>
+</body>
+</html>

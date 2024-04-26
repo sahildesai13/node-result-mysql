@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Result</title>
+</head>
+
+<body>
+    <form method="post">
+        id : <input type="number" name="id" value="<%=data.id%>" readonly><br><br>
+        name : <input type="text" name="name" value="<%=data.name%>"><br><br>
+        email : <input type="email" name="email" value="<%=data.email%>"><br><br>
+        roll no : <input type="text" name="rollno" value="<%=data.rollno%>" readonly><br><br>
+        standerd : <input type="text" name="standerd" value="<%=data.ststd%>"><br><br>
+        division : <input type="text" name="division" value="<%=data.stdiv%>"><br><br>
+        sub1 : <input type="number" name="sub1" value="<%=data.sub1%>"><br><br>
+        sub2 : <input type="number" name="sub2" value="<%=data.sub2%>"><br><br>
+        sub3 : <input type="number" name="sub3" value="<%=data.sub3%>"><br><br>
+        sub4 : <input type="number" name="sub4" value="<%=data.sub4%>"><br><br>
+        sub5 : <input type="number" name="sub5" value="<%=data.sub5%>"><br><br>
+        <input type="submit" name="save">
+        <button onClick="location.href='/StudentList'">back</button>
+    </form>
+</body>
+
+</html>
